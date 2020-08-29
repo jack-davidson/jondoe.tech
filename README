@@ -1,0 +1,5 @@
+/tech.jondoe
+
+to get and preview website
+
+    `git clone https://gitlab.com/J0ND03/tech.jondoe && cd tech.jondoe && $BROWSER index.html`
