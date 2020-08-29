@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blog</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+</head>
+<body>
+<pre>
+<p><span class=fg1>J0ND03's blog</span> | <a href="../blog.html">back to previous index</a>
+
+______________________________________
+
+<span class=fg1>J0ND03's Guide to Running old Hardware</span>
+______________________________________
+
+I use a Lenovo Thinkpad T60 from 2006 as my main laptop. Recently, I have
+been asking fellow irc-dwellers and other forum-dwellers what hardware they are
+using. I usually end up having the oldest hardware and I sometimes get questions,
+"why *?".
+
+<span class=fg1>Why do I use a laptop from 15 years ago?</span>
+
+Back when IBM sold the Thinkpad brand to Lenovo, the transition created a couple
+of amazing laptops like the Thinkpad X60 and T60. These were the first Lenovo
+Thinkpad laptops and you could tell that these laptops were heavily designed by
+IBM because later models had distinct design features that stated they were Lenovo,
+not IBM. There was even an option to get IBM branding on the X60 and T60 (it was
+pretty common for some reason, mine has IBM badges).
+
+IBM had great quality, like how IBM's Model F and Model M keyboards still hold up
+as the best keyboards ever and inspired the keyboard layout most people use today.
+I use the old laptop because the Thinkpad T60 has a great balance between performance
+(the T60 supports x86_64 processors and up to 3G of ram!) and still had the great
+IBM design, utility, and form factor with its 4:3 aspect ratio.
+
+In this guide, I hope to open you, the reader, to a whole new world of opportunites
+to use older hardware that has certain quirks that spark your interest. You will
+know what to do to create an optimized system that will work great on less powerful
+hardware.
+
+
+<span class=fg1>1. Rid your hardware of any Proprietary Operating System STAT!</span>
+
+I assume that the readers of this blog all use free and open source *nix based
+operating systems { */Linux, OpenBSD, NetBSD, FreeBSD, etc } but if you find old
+hardware with say, Microsoft Windows installed on it, wipe that disk and install
+your favorite *nix.
+
+
+<span class=fg1>2. Operating System/Software Distribution choice</span>
+
+When choosing an operating system to use on your old hardware, I would advise
+an operating system that doesn't install much software by default. My current
+operating system is Void Linux. Void Linux doesn't even require a compiler by
+default so I took liberty in choosing <a href="https://bellard.org/tcc/">tcc</a>, aka. Tiny C Compiler which is way
+less bloated that GCC or other popular compilers. I can also choose to install
+any other software I need with a distribution like Void which doesn't install
+much by default.
+
+
+<span class=fg1>3. Software choice</span>
+
+Now that you've chosen an operating system for your cool hardware, you have to
+decide what software to install in your distribution. Install the bare minimum
+packages needed for Xorg + Drivers and other software you may want but here comes
+the fun part: WINDOW MANAGERS!!! I have been using suckless dwm for a few weeks
+and I really love it! If you do not know, dwm's configuration is a C header file
+called 'config.h'. All I needed to do was configure colors, keybindings (you will
+need to know a little C bitwise logic for keybinds and configuring window rules),
+and window rules. I modified config.mk to include my compiler, tcc by changing
+'CC =' to 'CC = tcc'. Now run make, sudo make install and you are done!
+
+Dwm is very efficient and when you study the source code, you can see that the people
+at suckless really made an effort to utilize algorithms, bitwise logic (bitwise
+logic saves a few cpu cycles when doing basic math), and data structures. Obviously,
+one will install st, dmenu, and other suckless utilities until they are happy,
+see <a href="https://suckless.org">here</a> for the suckless webpage. Suckless software expects that you know how
+to install header files and dependencies, how to use make and compilers (obviously),
+and how to figure out problems on your own as the source code is the real meaningful
+documentation in suckless utilities. You also might want to know C or use the suckless
+software as an opportunity to learn C because C is a great language especially when
+dealing with *nix, pretty much everything is written in C and glued together with
+POSIX shell.
+
+
+<span class=fg1>4. Hardware Modifications</span>
+
+With my T60, I had previously bought another one and I had a spare 64 bit cpu
+with a beefier heatsink and I installed them in my T60 I have now. I proceded to
+then install <a href="https://libreboot.org">libreboot</a>, a fully free and open source BIOS implementation based
+off coreboot with the goal of eliminating proprietary BLOBS within the firmware.
+This upgrade, theoretically, improved performance by something like 25% which is
+pretty good.
+
+
+<span class=fg1>Conclusion</span>
+
+Old hardware is great and buying used hardware reduces waste and gives you cool
+hardware with features that suite you. I love older hardware and I made this
+article to guide more usage of old hardware and breathing new life into it with
+minimalist software. My T60 runs 6 tabs of qutebrowser fine + 4 terminals and other
+services running in the background. My ram usage, idle with no applications open
+but with window manager running, is 77M. I may explore even older Thinkpads from
+the early 2000's but for now, my laptop isn't about being the fastest or newest
+from apple or dell, but its about being fully-free, customizable, and makes me
+happy everytime I use it. I have the best laptop in the World and you can too!
+
+<span class=fg1>Happy Hacking!</span>
+
+
+| <a href="../blog.html">back to previous index</a> |
+</p>
+</pre>
+</body>
+</html>
